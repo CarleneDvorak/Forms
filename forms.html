@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<!--
+       Author:Carlene Dvorak 
+		Date: April 11, 2018  
+     -->
+		<title>Forms</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	
+		
+	<body>
+		<form action= "#" method ="post">
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label for ="fname">First Name</label>
+			<input type="text" name="fname" required>
+			<br/>
+			<label for ="lname">Last Name</label>
+			<input type="text" name="lname" required>
+			<br/>
+			
+			<label for ="email">Email Address</label>
+			<input type="text" name="email" required>
+			<br/>
+			<label for="phone">Phone Number</label> 
+			<input type="text" name="phone" required>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Additional Information</legend>
+			<label for="select list">Check the box next to the things you own:</label>
+			<label class="checkboxes">Car
+			<input type="checkbox">
+			<span class="checkmark"></span></label>
+			
+			<label class="checkboxes">House
+			<input type="checkbox"
+			<span class="checkmark"></span></label>
+		    
+			<label class="checkboxes">Phone
+			<input type="checkbox" 
+			<span class="checkmark"></span></label>
+			
+			<label class="checkboxes">Computer
+			<input type="checkbox" 
+			<span class="checkmark"></span></label>
+			<br/>
+			<label for="selectlist">Would you like to subscribe to our newsletter?</label>
+	
+		<input type="radio" name="subscribe" value="yes" required>Yes
+		<input type="radio" name="subscribe" value="no">No<br>
+		<label for="selectlist">Please select your OTC Campus,</label>
+		<select name="Schools">
+		<option value="Springfield">Springfield</option>
+		<option value="Richwood Valley">Richwood Valley</option>
+		<option value="Lebanon">Lebanon</option>
+		<option value="Waynesville">Waynesville</option>
+		<option value="Table Rock">Table Rock</option></select>
+		</fieldset>
+		<fieldset>
+			<legend>Additional Comments</legend>
+			<textarea rows="10" cols="70"></textarea>
+			<br/>
+		<button action="submit" type="submit">Submit</button>
+		<input type="reset" value="Reset">
+		</form></fieldset>
+		
+	</body>
+</html>
