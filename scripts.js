@@ -1,3 +1,6 @@
+// Authors:Carlene Dvorak, Stan Razumov
+// Date: October 24, 2018 
+
 var queryString = window.location.search;
 queryString = queryString.substring(1);
 

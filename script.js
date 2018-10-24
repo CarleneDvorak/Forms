@@ -6,6 +6,9 @@ var radio = document.myForm.subscribe;
 var fnameErr = document.getElementById("fNameErr");
 var lnameErr = document.getElementById("lNameErr");
 var emailErr = document.getElementById("emailErr");
+// Authors:Carlene Dvorak, Stan Razumov
+// Date: October 24, 2018 
+
 var phoneErr = document.getElementById("phoneErr");
 var radioErr = document.getElementById("radioErr");
 var emailRgx = /\S+@\S+\.\S+/;
