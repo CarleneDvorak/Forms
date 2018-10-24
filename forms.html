@@ -12,26 +12,31 @@
 	</head>
 	
 	<body>
-		<form action= "#" method ="post">
+		<form name="myForm" action= "thankyou.html" method ="GET">
 		<fieldset>
 			<legend>Contact Information</legend>
 			<label for ="fname">First Name</label>
-			<input type="text" name="fname" >
+			<input type="text" name="fname" > 
+			<div id="fNameErr" style="display:none"></div>
 			<br/>
 			<label for ="lname">Last Name</label>
 			<input type="text" name="lname" >
+			<div id="lNameErr" style="display:none"></div>
 			<br/>
 			<label for ="email">Email Address</label>
 			<input type="text" name="email" >
+			<div id="emailErr" style="display:none"></div>
 			<br/>
 			<label for="phone">Phone Number</label> 
 			<input type="text" name="phone" >
+			<div id="phoneErr" style="display:none"></div>
 		</fieldset>
 		 <fieldset>
 			<legend>Additional Information</legend>
 			<label for="selectlist">Would you like to subscribe to our newsletter?</label>
 		<input type="radio" name="subscribe" value="yes" >Yes
 		<input type="radio" name="subscribe" value="no">No
+		<div id="radioErr" style="display:none"></div>
 		<br>
 		<label for="selectlist">Please select your OTC Campus</label>
 		<select name="Schools">
@@ -41,8 +46,8 @@
 			<option value="Waynesville">Waynesville</option>
 			<option value="Table Rock">Table Rock</option>
 		</select>
-		<button action="submit" type="submit">Submit</button>
-		<input type="reset" value="Reset">
+		<button type="button" onclick="Default();Redirect()">Submit</button>
+		<input type="reset" onclick="Default()">
 		</form>
 	</fieldset>
 	</body>
