@@ -4,13 +4,13 @@
 var queryString = window.location.search;
 queryString = queryString.substring(1);
 
-    var params = {}, queries, temp, i, l;
-    // Split into key/value pairs
-    queries = queryString.split("&");
-    // Convert the array of strings into an object
-    for ( i = 0, l = queries.length; i < l; i++ ) {
-        temp = queries[i].split('=');
-        params[temp[0]] = temp[1];
+var params = {}, queries, temp, i, l;
+// Split into key/value pairs
+queries = queryString.split("&");
+// Convert the array of strings into an object
+for ( i = 0, l = queries.length; i < l; i++ ) {
+    temp = queries[i].split('=');
+    params[temp[0]] = decodeURIComponent(temp[1]);
  }
 
 function fillInfo(){
@@ -29,11 +29,6 @@ function fillInfo(){
 }
 fillInfo()
 
-    
-    var str = document.getElementById('email'); 
-    var emailFix = str.innerText.replace("%40", "@");
-    document.getElementById('email').innerHTML = emailFix;
-    console.log(str)
 
    
 
